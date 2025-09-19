@@ -220,6 +220,7 @@ hr {
 }
 
 .text-input {
+    width: 100%;
     background: transparent;
     color: #fafafa;
     border: 1px solid #fafafa;
