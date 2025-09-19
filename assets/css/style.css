@@ -238,6 +238,7 @@ hr {
 
 .join-button {
     background-color: #454b1b;
+    border-radius: 2px;
     color: #fafafa;
     font-size: 100%;
     margin-top: 20px;
