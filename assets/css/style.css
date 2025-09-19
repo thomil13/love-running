@@ -159,6 +159,30 @@ hr {
     align-items: center;
     justify-content: center;
 }
+
+/* Meetups Section*/
+#times {
+    background: url(../images/dublin-city.webp) no-repeat center center/cover;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#times div {
+    color: #fafafa;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    text-align: center;
+    flex-basis: 200px;
+    flex-grow: 1;
+    /* Creates a grid for meet up time divs */
+    border: 2px solid white;
+}
+
+#times h3 {
+    /*Override heading color set in general styles*/
+    color: #fafafa;
+}
+
 /* Footer below */
 #social-networks {
     text-align: center;
@@ -232,38 +256,38 @@ hr {
         text-align: end;
         align-self: flex-end;
     }
-}
 
-/* Large devices (992px and higher) */
-@media screen and (min-width: 992px) {
-    #menu a:hover {
-        border-bottom: 1px solid #3a3a3a;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    #benefits {
-        display: flex;
-        flex-direction: row;
+    /* Large devices (992px and higher) */
+    @media screen and (min-width: 992px) {
+        #menu a:hover {
+            border-bottom: 1px solid #3a3a3a;
+        }
     }
 
-    #benefits > div {
-        flex: 1;
-    }
+    @media screen and (min-width: 1200px) {
+        #benefits {
+            display: flex;
+            flex-direction: row;
+        }
 
-    #benefits-image {
-        order: 0;
-    }
+        #benefits > div {
+            flex: 1;
+        }
 
-    #benefits-mental {
-        order: 1;
-    }
+        #benefits-image {
+            order: 0;
+        }
 
-    #benefits-mental > div {
-        align-self: flex-start;
-    }
+        #benefits-mental {
+            order: 1;
+        }
 
-    #benefits-physical > div {
-        align-self: flex-end;
+        #benefits-mental > div {
+            align-self: flex-start;
+        }
+
+        #benefits-physical > div {
+            align-self: flex-end;
+        }
     }
 }
